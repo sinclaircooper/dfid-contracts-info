@@ -45,7 +45,7 @@ for link in links:
 
             elif span_text == "Awarded value":
                 #print info
-                value = int(info_decoded.encode('utf-8').replace(u',','').replace(u'£',''))
+                value = int(info_decoded.replace(u',','').replace(u'£',''))
                 #print value
 
             elif span_text == "Location where the contract is to be carried out:":
