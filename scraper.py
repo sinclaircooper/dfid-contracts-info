@@ -28,8 +28,8 @@ for link in links:
         if span_text != "":
             info = p.get_text().strip()
             
-            #print span_text
-            #print p.get_text().strip()
+            print span_text
+            print p.get_text().strip()
             #print
 
             if span_text == "Reference number:":
@@ -40,9 +40,9 @@ for link in links:
                 length = info
                 #print length
 
-            #elif span_text == "Awarded value":
+            elif span_text == "Awarded value":
                 #print info 
-             #   value = int(info.encode("utf8").replace(u",","").replace(u"£",""))
+                value = int(info.encode("utf8").replace(u",","").replace(u"£",""))
                 #print value
 
             elif span_text == "Location where the contract is to be carried out:":
