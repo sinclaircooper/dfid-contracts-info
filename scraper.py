@@ -1,5 +1,6 @@
 import scraperwiki
 from bs4 import BeautifulSoup # documentation at http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+# -*- coding: utf-8 -*-
 
 
 
