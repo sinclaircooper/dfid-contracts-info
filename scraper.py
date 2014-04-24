@@ -26,7 +26,7 @@ for link in links:
             span_text = span.get_text().strip()
             span.clear()
         if span_text != "":
-            info = p.get_text().strip().decode('utf-8')
+            info = p.get_text().strip()
             #info = info.decode('utf-8')
 
             #print span_text
