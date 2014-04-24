@@ -27,9 +27,10 @@ for link in links:
             span.clear()
         if span_text != "":
             info = p.get_text().strip()
-            
-            print span_text
-            print p.get_text().strip()
+            #info = info.decode('utf-8')
+
+            #print span_text
+            #print p.get_text().strip()
             #print
 
             if span_text == "Reference number:":
@@ -42,7 +43,6 @@ for link in links:
 
             elif span_text == "Awarded value":
                 #print info
-                info = info.decode('utf-8')
                 value = int(info.encode("utf8").replace(u",","").replace(u"£",""))
                 #print value
 
