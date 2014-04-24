@@ -19,6 +19,7 @@ for link in links:
     # Paragraph tags contain information like reference, duration, nature of contract, etc.
     ps = soup.find_all("p", "clearfix")
     for p in ps:
+        p = p.decode('utf-8')
         span_text = ""
         span = p.find("span")
         if span: 
