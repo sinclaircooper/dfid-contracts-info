@@ -1,7 +1,6 @@
 import scraperwiki
 from bs4 import BeautifulSoup # documentation at http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-# -*- coding: utf-8 -*-
-# coding: utf-8
+
 
 
 scraperwiki.sqlite.attach("dfid-contracts") # Attaching scraper https://scraperwiki.com/scrapers/dfid-contracts/
@@ -45,7 +44,7 @@ for link in links:
 
             elif span_text == "Awarded value":
                 #print info
-                value = int(info.encode("utf-8").replace(u",","").replace(u"£",""))
+                value = int(info.encode('utf-8').replace(u',','').replace(u'£',''))
                 #print value
 
             elif span_text == "Location where the contract is to be carried out:":
