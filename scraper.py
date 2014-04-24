@@ -28,44 +28,44 @@ for link in links:
             span.clear()
         if span_text != "":
             info = p.get_text().strip()
-            #info = info.decode('utf-8')
+            info_decoded = info.decode('utf-8')
 
             #print span_text
             #print p.get_text().strip()
             #print
 
             if span_text == "Reference number:":
-                ref = info
+                ref = info_decoded
                 #print ref
 
             elif span_text == "Estimated length of contract:":
-                length = info
+                length = info_decoded
                 #print length
 
             elif span_text == "Awarded value":
                 #print info
-                value = int(info.encode('utf-8').replace(u',','').replace(u'£',''))
+                value = int(info_decoded.encode('utf-8').replace(u',','').replace(u'£',''))
                 #print value
 
             elif span_text == "Location where the contract is to be carried out:":
                 #print info
-                location = info.replace("English","")
+                location = info_decoded.replace("English","")
                 #print location
 
             elif span_text == "Name of the buying organisation:":
-                organisation = info.replace("English","")
+                organisation = info_decoded.replace("English","")
                 #print organisation
 
             elif span_text == "Is it a framework agreement?":
-                framework = info
+                framework = info_decoded
                 #print framework
           
             elif span_text == "Awarded on:":
-                date = info
+                date = info_decoded
                 #print date
 
             elif span_text == "Nature of procurement":
-                nature = info
+                nature = info_decoded
                 #print nature
 
     classification_details = soup.find("span", id = "pagecontent_0_ctlNoticeClassificationDetails_ctl00_lblClassificationName")
