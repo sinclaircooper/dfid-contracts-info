@@ -29,7 +29,7 @@ for link in links:
             span.clear()
         if span_text != "":
             info = p.get_text().strip()
-            info_decoded = info.decode('utf-8')
+            info_decoded = info.decode('utf8')
 
             #print span_text
             #print p.get_text().strip()
