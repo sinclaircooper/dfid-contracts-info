@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import scraperwiki
+import scraperwiki import scraperwiki
 from bs4 import BeautifulSoup # documentation at http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 
