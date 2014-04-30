@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup # documentation at http://www.crummy.com/software/
 
 
 links = scraperwiki.sqlite.select("dfid-contracts.sqlite")#("URL from `dfid-contracts`.swdata") # Selecting the URLs collected from the search results from contract finder
-scraperwiki.sqlite.attach("dfid-contracts") # Attaching scraper https://scraperwiki.com/scrapers/dfid-contracts/
+scraperwiki.sqlite.attach("dfid-contracts_1") # Attaching scraper https://scraperwiki.com/scrapers/dfid-contracts/
 
 
 # Getting the html from the links
