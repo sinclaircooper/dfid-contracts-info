@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import scraperwiki
 from bs4 import BeautifulSoup # documentation at http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-# -*- coding: utf-8 -*-
 
 
 
@@ -45,7 +46,7 @@ for link in links:
 
             elif span_text == "Awarded value":
                 #print info
-                value = int(info_decoded.encode('utf8')replace(',','').replace('unichr(163)',''))
+                value = int(info_decoded.encode('utf8')replace(',','').replace('£',''))
                 #print value
 
             elif span_text == "Location where the contract is to be carried out:":
